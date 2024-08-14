@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Attendance File</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"></head>
+<body class="bg-light">
+    <div class="container mt-5">
+
+        <!-- Just-BLR Header -->
+        <div class="text-center mb-4">
+            <h2>Just BLR</h2>
+        </div>
+
+        <!-- Form Card -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2 class="card-title">Upload Attendance File</h2>
+            </div>
+            <div class="card-body">
+                <form action="/" method="post" enctype="multipart/form-data" class="form-inline">
+                    <div class="form-group mb-2">
+                        <input type="file" name="file" class="form-control-file">
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2 ml-2">Upload</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- How To Use Card -->
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">How To Use</h4>
+            </div>
+            <div class="card-body">
+                <ol>
+                    <li>Upload attendance file in the following format with exact column names:
+                        <ul>
+                            <li>Emp Id</li>
+                            <li>Name</li>
+                            <li>Date</li>
+                            <li>Shift</li>
+                            <li>From</li>
+                            <li>To</li>
+                            <li>First Punch</li>
+                            <li>Last Punch</li>
+                            <li>Total Working Hours</li>
+                            <li>Total Break Hours</li>
+                        </ul>
+                    </li>
+                    <li>On the next page, upload the salary file with the following columns:
+                        <ul>
+                            <li>Code</li>
+                            <li>Name</li>
+                            <li>Mobile No</li>
+                            <li>Gender</li>
+                            <li>Department Name</li>
+                            <li>Designation Name</li>
+                            <li>Salary Type</li>
+                            <li>Salary</li>
+                            <li>Floor</li>
+                        </ul>
+                    </li>
+                    <li>If you are uploading a new salary file or for the first time, after selecting the file, click "Match All" to align employee data. You can modify the salary details after matching.</li>
+                    <li>If fetching attendance for another day and the salary details haven’t changed, you don’t need to upload the salary file again. Just click "Save Salary".</li>
+                    <li>Finally, on the report page, you can download the report as a CSV or PDF file.</li>
+                </ol>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
