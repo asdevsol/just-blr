@@ -126,7 +126,7 @@ def result():
     )
 
     # Filter to include only rows with penalties
-    df = df[df['Late Deduction'] != 0]
+    df = df[(df['Late Deduction'] != 0) & (df['Late Deduction'] != "ABSENT")]
 
     # Save the filtered DataFrame to CSV
     output_file_path = 'static/attendance_with_deductions.csv'
