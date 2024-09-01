@@ -204,4 +204,4 @@ if __name__ == '__main__':
     if not os.path.exists('static'):
         os.makedirs('static')
     init_db()
-    app.run(debug=False, host='0.0.0.0', port=3000)
+    #app.run(debug=False, host='0.0.0.0', port=3000)
